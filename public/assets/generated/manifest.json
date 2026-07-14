@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-14T09:53:29.679Z",
+  "assets": [
+    {
+      "id": "samir-idle",
+      "file": "/assets/generated/characters/samir/idle.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 45,
+        "top": 210,
+        "width": 86,
+        "height": 132
+      },
+      "category": "protagonist",
+      "animation": null,
+      "duration": null,
+      "width": 56,
+      "height": 96,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.94
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -72,
+        "width": 36,
+        "height": 72
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -82,
+        "width": 44,
+        "height": 82
+      }
+    },
+    {
+      "id": "samir-run-1",
+      "file": "/assets/generated/characters/samir/run-1.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 485,
+        "top": 210,
+        "width": 95,
+        "height": 132
+      },
+      "category": "protagonist",
+      "animation": "run",
+      "duration": 90,
+      "width": 77,
+      "height": 96,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.94
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "samir-run-2",
+      "file": "/assets/generated/characters/samir/run-2.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 565,
+        "top": 210,
+        "width": 100,
+        "height": 132
+      },
+      "category": "protagonist",
+      "animation": "run",
+      "duration": 90,
+      "width": 81,
+      "height": 96,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.94
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "directorio-rifleman",
+      "file": "/assets/generated/enemies/directorio/rifleman.png",
+      "source": "/assets/concept/directorio-reference.png",
+      "sourceCrop": {
+        "left": 394,
+        "top": 76,
+        "width": 58,
+        "height": 92
+      },
+      "category": "enemy",
+      "animation": null,
+      "duration": null,
+      "width": 61,
+      "height": 88,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.95
+      },
+      "hitbox": {
+        "x": -17,
+        "y": -66,
+        "width": 34,
+        "height": 66
+      },
+      "hurtbox": {
+        "x": -20,
+        "y": -74,
+        "width": 40,
+        "height": 74
+      }
+    },
+    {
+      "id": "ojo-del-cielo-prototype",
+      "file": "/assets/generated/bosses/ojo-del-cielo.png",
+      "source": "/assets/concept/directorio-reference.png",
+      "sourceCrop": {
+        "left": 552,
+        "top": 471,
+        "width": 76,
+        "height": 48
+      },
+      "category": "boss",
+      "animation": null,
+      "duration": null,
+      "width": 156,
+      "height": 104,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "hitbox": {
+        "x": -43,
+        "y": -29,
+        "width": 86,
+        "height": 58
+      },
+      "hurtbox": {
+        "x": -48,
+        "y": -34,
+        "width": 96,
+        "height": 68
+      }
+    },
+    {
+      "id": "barrio-del-olivo",
+      "file": "/assets/generated/backgrounds/barrio-del-olivo.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 22,
+        "top": 164,
+        "width": 466,
+        "height": 435
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    }
+  ]
+}

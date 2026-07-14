@@ -4,3 +4,4 @@ out
 .git
 playwright-report
 test-results
+artifacts

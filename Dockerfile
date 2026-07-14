@@ -1,4 +1,4 @@
-FROM node:22-bookworm-slim AS base
+FROM docker.io/library/node:22-bookworm-slim AS base
 
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
@@ -6,7 +6,7 @@ RUN corepack enable && corepack prepare pnpm@11.13.0 --activate
 WORKDIR /app
 
 FROM base AS deps
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml* ./
 RUN pnpm install --frozen-lockfile=false
 
 FROM base AS development
@@ -20,6 +20,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN pnpm assets:extract && pnpm build
 
-FROM nginx:1.29-alpine AS production
+FROM docker.io/library/nginx:1.29-alpine AS production
 COPY --from=build /app/out /usr/share/nginx/html
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80

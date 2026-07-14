@@ -47,12 +47,24 @@ const assets = [
     source: "public/assets/concept/directorio-reference.png",
     output: "enemies/directorio/rifleman.png",
     category: "enemy",
-    crop: { left: 392, top: 72, width: 76, height: 150 },
+    crop: { left: 394, top: 76, width: 58, height: 92 },
     transparentPaper: true,
     targetHeight: 88,
     anchor: { x: 0.5, y: 0.95 },
     hitbox: { x: -17, y: -66, width: 34, height: 66 },
     hurtbox: { x: -20, y: -74, width: 40, height: 74 },
+  },
+  {
+    id: "ojo-del-cielo-prototype",
+    source: "public/assets/concept/directorio-reference.png",
+    output: "bosses/ojo-del-cielo.png",
+    category: "boss",
+    crop: { left: 552, top: 471, width: 76, height: 48 },
+    transparentPaper: true,
+    targetHeight: 104,
+    anchor: { x: 0.5, y: 0.5 },
+    hitbox: { x: -43, y: -29, width: 86, height: 58 },
+    hurtbox: { x: -48, y: -34, width: 96, height: 68 },
   },
   {
     id: "barrio-del-olivo",
@@ -71,18 +83,45 @@ async function removePaperBackground(image) {
     resolveWithObject: true,
   });
 
-  for (let i = 0; i < data.length; i += 4) {
-    const r = data[i];
-    const g = data[i + 1];
-    const b = data[i + 2];
+  const { width, height } = info;
+  const visited = new Uint8Array(width * height);
+  const queue = new Int32Array(width * height);
+  let head = 0;
+  let tail = 0;
+
+  const isPaper = (pixelIndex) => {
+    const offset = pixelIndex * 4;
+    const r = data[offset];
+    const g = data[offset + 1];
+    const b = data[offset + 2];
     const brightness = (r + g + b) / 3;
     const chroma = Math.max(r, g, b) - Math.min(r, g, b);
-    const paperLike = brightness > 170 && chroma < 55 && r >= b;
+    return brightness > 125 && chroma < 95 && r + 8 >= g && g + 12 >= b;
+  };
+  const enqueue = (pixelIndex) => {
+    if (visited[pixelIndex] || !isPaper(pixelIndex)) return;
+    visited[pixelIndex] = 1;
+    queue[tail++] = pixelIndex;
+  };
 
-    if (paperLike) {
-      const alpha = Math.max(0, Math.min(255, (205 - brightness) * 8));
-      data[i + 3] = alpha;
-    }
+  for (let x = 0; x < width; x += 1) {
+    enqueue(x);
+    enqueue((height - 1) * width + x);
+  }
+  for (let y = 0; y < height; y += 1) {
+    enqueue(y * width);
+    enqueue(y * width + width - 1);
+  }
+
+  while (head < tail) {
+    const pixelIndex = queue[head++];
+    const x = pixelIndex % width;
+    const y = Math.floor(pixelIndex / width);
+    data[pixelIndex * 4 + 3] = 0;
+    if (x > 0) enqueue(pixelIndex - 1);
+    if (x + 1 < width) enqueue(pixelIndex + 1);
+    if (y > 0) enqueue(pixelIndex - width);
+    if (y + 1 < height) enqueue(pixelIndex + width);
   }
 
   return sharp(data, {

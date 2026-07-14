@@ -1,0 +1,327 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0d1210;
+  --paper: #d9c9a5;
+  --rust: #a94e2e;
+  --olive: #66704a;
+  --gold: #c89954;
+  --blue: #376c98;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+}
+body {
+  font-family: ui-monospace, "Cascadia Mono", "Liberation Mono", monospace;
+}
+a {
+  color: inherit;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-screen,
+.document-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background: url("/assets/generated/backgrounds/barrio-del-olivo.png") center /
+    cover no-repeat;
+}
+.menu-screen::after,
+.document-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 13, 11, 0.96) 0%,
+    rgba(9, 13, 11, 0.84) 48%,
+    rgba(9, 13, 11, 0.28) 100%
+  );
+}
+.menu-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  box-shadow: inset 0 0 180px #000;
+  pointer-events: none;
+}
+.title-card,
+.document-panel {
+  z-index: 2;
+  width: min(680px, calc(100vw - 40px));
+  margin-right: min(42vw, 600px);
+  padding: 40px;
+  border: 1px solid rgba(200, 153, 84, 0.55);
+  background: rgba(12, 17, 14, 0.88);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+.title-card h1 {
+  margin: 8px 0 20px;
+  color: #eee0bf;
+  font:
+    900 clamp(3rem, 8vw, 7rem)/0.78 Impact,
+    sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.title-card h1 span {
+  display: block;
+  margin-top: 20px;
+  color: var(--olive);
+  font-size: 0.42em;
+  letter-spacing: 0.08em;
+}
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+.lead {
+  max-width: 60ch;
+  color: #d4c5a5;
+  line-height: 1.65;
+}
+.main-menu {
+  display: grid;
+  gap: 10px;
+  margin: 30px 0;
+}
+.main-menu a,
+.primary-button {
+  display: block;
+  width: fit-content;
+  min-width: 260px;
+  padding: 12px 18px;
+  border: 1px solid rgba(200, 153, 84, 0.45);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.main-menu a:hover,
+.primary-button:hover {
+  color: #0e120e;
+  background: var(--paper);
+}
+.main-menu .primary-button,
+.primary-button {
+  background: var(--olive);
+  color: #fff4d5;
+}
+.motto {
+  margin-top: 36px;
+  color: #9aa178;
+  font-style: italic;
+}
+
+.document-panel {
+  margin: 0;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+}
+.document-panel h1 {
+  font:
+    800 3rem/1 Impact,
+    sans-serif;
+  text-transform: uppercase;
+  color: #eee0bf;
+}
+.document-panel p {
+  line-height: 1.65;
+}
+.control-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border-top: 1px solid #655c49;
+  margin: 24px 0;
+}
+.control-grid span,
+.control-grid p {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #4e493d;
+}
+.control-grid span {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.game-shell {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #0a0e0c;
+}
+.game-host {
+  position: absolute;
+  inset: 0;
+}
+.game-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+.hud {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 16px;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  pointer-events: none;
+}
+.hud-block,
+.hud-objective {
+  padding: 8px 12px;
+  border: 1px solid rgba(207, 173, 112, 0.6);
+  background: rgba(11, 15, 13, 0.88);
+  box-shadow: 0 4px 16px #0007;
+}
+.hud-block {
+  min-width: 100px;
+}
+.hud-block small,
+.hud-objective small {
+  display: block;
+  color: #a99b7c;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.hud-block strong {
+  font-size: 22px;
+}
+.health-block {
+  width: 230px;
+}
+.health-block > span {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.health-track {
+  height: 11px;
+  border: 1px solid #7b684b;
+  background: #241d18;
+}
+.health-track i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #7d1f1d, #bd4c2f);
+  transition: width 0.15s linear;
+}
+.hud-objective {
+  flex: 1;
+}
+.hud-objective strong {
+  display: block;
+  margin-top: 4px;
+  color: #e1d2ad;
+}
+.checkpoint-indicator {
+  position: absolute;
+  left: 20px;
+  bottom: 42px;
+  color: #c9b47d;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px #000;
+}
+.boss-indicator {
+  position: absolute;
+  top: 96px;
+  left: 50%;
+  translate: -50% 0;
+  width: min(460px, calc(100vw - 40px));
+  padding: 8px 12px;
+  color: #d9c9a5;
+  text-align: center;
+  text-transform: uppercase;
+  background: #0b0f0de8;
+  border: 1px solid #6689a5;
+}
+.boss-indicator span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+.boss-track {
+  height: 8px;
+  background: #17212a;
+  border: 1px solid #4d6c85;
+}
+.boss-track i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #376c98, #83b4d6);
+  transition: width 0.1s linear;
+}
+.control-hint {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  padding: 6px 10px;
+  color: #bbb092;
+  background: #0b0f0dd9;
+  font-size: 12px;
+}
+.overlay-panel {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  translate: -50% -50%;
+  min-width: min(440px, calc(100vw - 30px));
+  padding: 30px;
+  text-align: center;
+  border: 2px solid var(--gold);
+  background: rgba(11, 15, 13, 0.96);
+  box-shadow: 0 20px 80px #000;
+}
+.overlay-panel h2 {
+  margin: 0 0 12px;
+  font:
+    800 2.4rem Impact,
+    sans-serif;
+  text-transform: uppercase;
+  color: #ead9b4;
+}
+.result-panel .primary-button {
+  margin: 24px auto 0;
+}
+.error-panel {
+  border-color: #b44534;
+}
+
+@media (max-width: 900px) {
+  .title-card {
+    margin: 20px;
+    padding: 28px;
+  }
+  .hud {
+    flex-wrap: wrap;
+  }
+  .hud-objective {
+    order: 5;
+    flex-basis: 100%;
+  }
+  .control-hint {
+    display: none;
+  }
+}
