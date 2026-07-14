@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "frameSize": {
+    "width": 112,
+    "height": 112
+  },
+  "anchor": {
+    "x": 0.5,
+    "y": 1
+  },
+  "hitbox": {
+    "x": -18,
+    "y": -76,
+    "width": 36,
+    "height": 76
+  },
+  "hurtbox": {
+    "x": -22,
+    "y": -84,
+    "width": 44,
+    "height": 84
+  },
+  "animations": {
+    "idle": [
+      {
+        "file": "/assets/characters/samir/idle/frame-00.png",
+        "duration": 180
+      }
+    ],
+    "walk": [
+      {
+        "file": "/assets/characters/samir/walk/frame-00.png",
+        "duration": 120
+      },
+      {
+        "file": "/assets/characters/samir/walk/frame-01.png",
+        "duration": 120
+      },
+      {
+        "file": "/assets/characters/samir/walk/frame-02.png",
+        "duration": 120
+      }
+    ],
+    "run": [
+      {
+        "file": "/assets/characters/samir/run/frame-00.png",
+        "duration": 95
+      },
+      {
+        "file": "/assets/characters/samir/run/frame-01.png",
+        "duration": 95
+      },
+      {
+        "file": "/assets/characters/samir/run/frame-02.png",
+        "duration": 95
+      }
+    ],
+    "jump": [
+      {
+        "file": "/assets/characters/samir/jump/frame-00.png",
+        "duration": 110
+      },
+      {
+        "file": "/assets/characters/samir/jump/frame-01.png",
+        "duration": 100
+      },
+      {
+        "file": "/assets/characters/samir/jump/frame-02.png",
+        "duration": 100
+      },
+      {
+        "file": "/assets/characters/samir/jump/frame-03.png",
+        "duration": 110
+      }
+    ],
+    "fall": [
+      {
+        "file": "/assets/characters/samir/fall/frame-00.png",
+        "duration": 125
+      },
+      {
+        "file": "/assets/characters/samir/fall/frame-01.png",
+        "duration": 125
+      }
+    ],
+    "land": [
+      {
+        "file": "/assets/characters/samir/land/frame-00.png",
+        "duration": 140
+      }
+    ],
+    "crouch": [
+      {
+        "file": "/assets/characters/samir/crouch/frame-00.png",
+        "duration": 140
+      },
+      {
+        "file": "/assets/characters/samir/crouch/frame-01.png",
+        "duration": 140
+      }
+    ],
+    "roll": [
+      {
+        "file": "/assets/characters/samir/roll/frame-00.png",
+        "duration": 90
+      },
+      {
+        "file": "/assets/characters/samir/roll/frame-01.png",
+        "duration": 90
+      },
+      {
+        "file": "/assets/characters/samir/roll/frame-02.png",
+        "duration": 90
+      }
+    ],
+    "shoot": [
+      {
+        "file": "/assets/characters/samir/shoot/frame-00.png",
+        "duration": 85
+      },
+      {
+        "file": "/assets/characters/samir/shoot/frame-01.png",
+        "duration": 85
+      }
+    ],
+    "hurt": [
+      {
+        "file": "/assets/characters/samir/hurt/frame-00.png",
+        "duration": 150
+      },
+      {
+        "file": "/assets/characters/samir/hurt/frame-01.png",
+        "duration": 150
+      }
+    ],
+    "death": [
+      {
+        "file": "/assets/characters/samir/death/frame-00.png",
+        "duration": 240
+      }
+    ]
+  }
+}

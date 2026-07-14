@@ -1,82 +1,774 @@
 {
-  "version": 1,
-  "generatedAt": "2026-07-14T09:53:29.679Z",
+  "version": 2,
+  "generatedAt": "2026-07-14T14:54:29.122Z",
   "assets": [
     {
-      "id": "samir-idle",
-      "file": "/assets/generated/characters/samir/idle.png",
+      "id": "samir-idle-0",
+      "file": "/assets/characters/samir/idle/frame-00.png",
       "source": "/assets/concept/samir-animation-board.png",
       "sourceCrop": {
-        "left": 45,
-        "top": 210,
-        "width": 86,
-        "height": 132
+        "left": 48,
+        "top": 198,
+        "width": 88,
+        "height": 140
       },
       "category": "protagonist",
-      "animation": null,
-      "duration": null,
-      "width": 56,
-      "height": 96,
+      "animation": "idle",
+      "duration": 180,
+      "width": 112,
+      "height": 112,
       "anchor": {
         "x": 0.5,
-        "y": 0.94
+        "y": 1
       },
       "hitbox": {
         "x": -18,
-        "y": -72,
+        "y": -76,
         "width": 36,
-        "height": 72
+        "height": 76
       },
       "hurtbox": {
         "x": -22,
-        "y": -82,
+        "y": -84,
         "width": 44,
-        "height": 82
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-walk-0",
+      "file": "/assets/characters/samir/walk/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 150,
+        "top": 198,
+        "width": 78,
+        "height": 140
+      },
+      "category": "protagonist",
+      "animation": "walk",
+      "duration": 120,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-walk-1",
+      "file": "/assets/characters/samir/walk/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 236,
+        "top": 198,
+        "width": 78,
+        "height": 140
+      },
+      "category": "protagonist",
+      "animation": "walk",
+      "duration": 120,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-walk-2",
+      "file": "/assets/characters/samir/walk/frame-02.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 318,
+        "top": 198,
+        "width": 82,
+        "height": 140
+      },
+      "category": "protagonist",
+      "animation": "walk",
+      "duration": 120,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-run-0",
+      "file": "/assets/characters/samir/run/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 426,
+        "top": 188,
+        "width": 98,
+        "height": 150
+      },
+      "category": "protagonist",
+      "animation": "run",
+      "duration": 95,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
       }
     },
     {
       "id": "samir-run-1",
-      "file": "/assets/generated/characters/samir/run-1.png",
+      "file": "/assets/characters/samir/run/frame-01.png",
       "source": "/assets/concept/samir-animation-board.png",
       "sourceCrop": {
-        "left": 485,
-        "top": 210,
-        "width": 95,
-        "height": 132
+        "left": 532,
+        "top": 188,
+        "width": 92,
+        "height": 150
       },
       "category": "protagonist",
       "animation": "run",
-      "duration": 90,
-      "width": 77,
-      "height": 96,
+      "duration": 95,
+      "width": 112,
+      "height": 112,
       "anchor": {
         "x": 0.5,
-        "y": 0.94
+        "y": 1
       },
-      "hitbox": null,
-      "hurtbox": null
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
     },
     {
       "id": "samir-run-2",
-      "file": "/assets/generated/characters/samir/run-2.png",
+      "file": "/assets/characters/samir/run/frame-02.png",
       "source": "/assets/concept/samir-animation-board.png",
       "sourceCrop": {
-        "left": 565,
-        "top": 210,
-        "width": 100,
-        "height": 132
+        "left": 632,
+        "top": 194,
+        "width": 92,
+        "height": 144
       },
       "category": "protagonist",
       "animation": "run",
-      "duration": 90,
-      "width": 81,
-      "height": 96,
+      "duration": 95,
+      "width": 112,
+      "height": 112,
       "anchor": {
         "x": 0.5,
-        "y": 0.94
+        "y": 1
       },
-      "hitbox": null,
-      "hurtbox": null
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-jump-0",
+      "file": "/assets/characters/samir/jump/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 48,
+        "top": 398,
+        "width": 76,
+        "height": 140
+      },
+      "category": "protagonist",
+      "animation": "jump",
+      "duration": 110,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-jump-1",
+      "file": "/assets/characters/samir/jump/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 125,
+        "top": 370,
+        "width": 78,
+        "height": 168
+      },
+      "category": "protagonist",
+      "animation": "jump",
+      "duration": 100,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-jump-2",
+      "file": "/assets/characters/samir/jump/frame-02.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 210,
+        "top": 360,
+        "width": 75,
+        "height": 178
+      },
+      "category": "protagonist",
+      "animation": "jump",
+      "duration": 100,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-jump-3",
+      "file": "/assets/characters/samir/jump/frame-03.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 294,
+        "top": 378,
+        "width": 66,
+        "height": 160
+      },
+      "category": "protagonist",
+      "animation": "jump",
+      "duration": 110,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-fall-0",
+      "file": "/assets/characters/samir/fall/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 370,
+        "top": 398,
+        "width": 84,
+        "height": 142
+      },
+      "category": "protagonist",
+      "animation": "fall",
+      "duration": 125,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-fall-1",
+      "file": "/assets/characters/samir/fall/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 452,
+        "top": 374,
+        "width": 78,
+        "height": 166
+      },
+      "category": "protagonist",
+      "animation": "fall",
+      "duration": 125,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-land-0",
+      "file": "/assets/characters/samir/land/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 583,
+        "top": 398,
+        "width": 84,
+        "height": 142
+      },
+      "category": "protagonist",
+      "animation": "land",
+      "duration": 140,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-crouch-0",
+      "file": "/assets/characters/samir/crouch/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 875,
+        "top": 224,
+        "width": 82,
+        "height": 116
+      },
+      "category": "protagonist",
+      "animation": "crouch",
+      "duration": 140,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-crouch-1",
+      "file": "/assets/characters/samir/crouch/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 950,
+        "top": 214,
+        "width": 88,
+        "height": 126
+      },
+      "category": "protagonist",
+      "animation": "crouch",
+      "duration": 140,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-roll-0",
+      "file": "/assets/characters/samir/roll/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 1072,
+        "top": 235,
+        "width": 88,
+        "height": 106
+      },
+      "category": "protagonist",
+      "animation": "roll",
+      "duration": 90,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-roll-1",
+      "file": "/assets/characters/samir/roll/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 1165,
+        "top": 238,
+        "width": 90,
+        "height": 103
+      },
+      "category": "protagonist",
+      "animation": "roll",
+      "duration": 90,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-roll-2",
+      "file": "/assets/characters/samir/roll/frame-02.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 1270,
+        "top": 228,
+        "width": 105,
+        "height": 113
+      },
+      "category": "protagonist",
+      "animation": "roll",
+      "duration": 90,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-shoot-0",
+      "file": "/assets/characters/samir/shoot/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 700,
+        "top": 385,
+        "width": 110,
+        "height": 156
+      },
+      "category": "protagonist",
+      "animation": "shoot",
+      "duration": 85,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-shoot-1",
+      "file": "/assets/characters/samir/shoot/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 810,
+        "top": 385,
+        "width": 105,
+        "height": 156
+      },
+      "category": "protagonist",
+      "animation": "shoot",
+      "duration": 85,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-hurt-0",
+      "file": "/assets/characters/samir/hurt/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 374,
+        "top": 612,
+        "width": 82,
+        "height": 120
+      },
+      "category": "protagonist",
+      "animation": "hurt",
+      "duration": 150,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-hurt-1",
+      "file": "/assets/characters/samir/hurt/frame-01.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 458,
+        "top": 603,
+        "width": 98,
+        "height": 129
+      },
+      "category": "protagonist",
+      "animation": "hurt",
+      "duration": 150,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
+    },
+    {
+      "id": "samir-death-0",
+      "file": "/assets/characters/samir/death/frame-00.png",
+      "source": "/assets/concept/samir-animation-board.png",
+      "sourceCrop": {
+        "left": 458,
+        "top": 603,
+        "width": 98,
+        "height": 129
+      },
+      "category": "protagonist",
+      "animation": "death",
+      "duration": 240,
+      "width": 112,
+      "height": 112,
+      "anchor": {
+        "x": 0.5,
+        "y": 1
+      },
+      "hitbox": {
+        "x": -18,
+        "y": -76,
+        "width": 36,
+        "height": 76
+      },
+      "hurtbox": {
+        "x": -22,
+        "y": -84,
+        "width": 44,
+        "height": 84
+      }
     },
     {
       "id": "directorio-rifleman",
@@ -111,8 +803,8 @@
       }
     },
     {
-      "id": "ojo-del-cielo-prototype",
-      "file": "/assets/generated/bosses/ojo-del-cielo.png",
+      "id": "sentinel-dx4",
+      "file": "/assets/generated/bosses/sentinel-dx4.png",
       "source": "/assets/concept/directorio-reference.png",
       "sourceCrop": {
         "left": 552,
@@ -150,7 +842,117 @@
         "left": 22,
         "top": 164,
         "width": 466,
-        "height": 435
+        "height": 408
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "hospital-interior",
+      "file": "/assets/generated/backgrounds/hospital-interior.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 492,
+        "top": 164,
+        "width": 461,
+        "height": 408
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "azoteas",
+      "file": "/assets/generated/backgrounds/azoteas.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 958,
+        "top": 164,
+        "width": 467,
+        "height": 408
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "mercado",
+      "file": "/assets/generated/backgrounds/mercado.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 22,
+        "top": 575,
+        "width": 466,
+        "height": 420
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "tuneles",
+      "file": "/assets/generated/backgrounds/tuneles.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 492,
+        "top": 575,
+        "width": 461,
+        "height": 420
+      },
+      "category": "background",
+      "animation": null,
+      "duration": null,
+      "width": 1280,
+      "height": 720,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "hitbox": null,
+      "hurtbox": null
+    },
+    {
+      "id": "torre-frontera",
+      "file": "/assets/generated/backgrounds/torre-frontera.png",
+      "source": "/assets/concept/environments.png",
+      "sourceCrop": {
+        "left": 958,
+        "top": 575,
+        "width": 467,
+        "height": 420
       },
       "category": "background",
       "animation": null,
