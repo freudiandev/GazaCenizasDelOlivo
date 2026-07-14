@@ -1,0 +1,18 @@
+[mcp_servers.godot]
+command = "/home/freudiandev/.nvm/versions/node/v22.22.2/bin/node"
+args = ["/home/freudiandev/.local/share/codex-mcp/godot-mcp/mcp-server/dist/index.js"]
+cwd = "/home/freudiandev/Documentos/dev/GazaCenizasDelOlivo/GazaCenizasDelOlivo"
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+default_tools_approval_mode = "writes"
+enabled = true
+
+# Pixel MCP is installed and checksum-verified, but Aseprite is not installed
+# on this machine yet. Enable this server after configuring aseprite_path in
+# ~/.config/pixel-mcp/config.json.
+[mcp_servers.pixel_art]
+command = "/home/freudiandev/.local/share/codex-mcp/pixel-mcp/0.5.0/pixel-mcp"
+startup_timeout_sec = 10
+tool_timeout_sec = 120
+default_tools_approval_mode = "writes"
+enabled = false
